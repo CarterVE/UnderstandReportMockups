@@ -1,0 +1,29 @@
+body{
+  margin: 0;
+    font-family:sans-serif;
+}
+
+a{
+    text-decoration:none;
+    color:#08C;
+}
+
+    .navbar {
+        width:1000px;
+        display:table;
+        border-collapse:collapse;
+        li{
+            display:table-cell;
+            text-align:center;
+            box-sizing:border-box;
+            border:#888 1px solid;
+        }
+        a{
+            display:block;
+            padding:.5em;
+        }
+    }
+
+.active {
+    background-color: #ffffff;
+}

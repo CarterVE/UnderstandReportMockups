@@ -85,35 +85,35 @@ var navPrepend = `
       </div>
     </div>
     <button onclick="pageToTop()" id="pagedesc" title="Return to top of page">Pixie - Overview</button>
-  <div class="navCenter">
-    <a href="#test">&</a>
-    <a href="#A">A</a>
-    <a href="#B">B</a>
-    <a2>C</a2>
-    <a href="#D">D</a>
-    <a href="#E">E</a>
-    <a href="#F">F</a>
-    <a href="#G">G</a>
-    <a2>H</a2>     <!-- OR different color/not underlined OR &middot; OR &minus; OR &bull;-->
-    <a href="#I">I</a>
-    <a href="#J">J</a>
-    <a href="#K">K</a>
-    <a2>L</a2>
-    <a href="#M">M</a>
-    <a href="#N">N</a>
-    <a href="#O">O</a>
-    <a2>P</a2>
-    <a href="#Q">Q</a>
-    <a href="#R">R</a>
-    <a href="#S">S</a>
-    <a2>T</a2>
-    <a href="#U">U</a>
-    <a href="#V">V</a>
-    <a href="#W">W</a>
-    <a href="#X">X</a>
-    <a href="#Y">Y</a>
-    <a href="#Z">Z</a>
-  </div>
+    <div class="navCenter">
+        <a href="#test">&</a>
+        <a href="#A">A</a>
+        <a href="#B">B</a>
+        <a2>C</a2>
+        <a href="#D">D</a>
+        <a href="#E">E</a>
+        <a href="#F">F</a>
+        <a href="#G">G</a>
+        <a2>H</a2>     <!-- OR different color/not underlined OR &middot; OR &minus; OR &bull;-->
+        <a href="#I">I</a>
+        <a href="#J">J</a>
+        <a href="#K">K</a>
+        <a2>L</a2>
+        <a href="#M">M</a>
+        <a href="#N">N</a>
+        <a href="#O">O</a>
+        <a2>P</a2>
+        <a href="#Q">Q</a>
+        <a href="#R">R</a>
+        <a href="#S">S</a>
+        <a2>T</a2>
+        <a href="#U">U</a>
+        <a href="#V">V</a>
+        <a href="#W">W</a>
+        <a href="#X">X</a>
+        <a href="#Y">Y</a>
+        <a href="#Z">Z</a>
+    </div>
 </div>
 </nav>
 

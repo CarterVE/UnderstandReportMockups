@@ -38,7 +38,7 @@ html, body {
 
 .scrolled-nav #lower-nav {    /*Styles the lower half of the nav bar on scroll*/
   position: sticky;
-  height: 30px;
+  height: 32px;
 }
 
 #main-content {               /*Styles everything below the navigation bar, the main content of the page*/
@@ -84,7 +84,7 @@ html, body {
   font-size: 20px;
   color: black;
   background-color: white;
-  padding: 2px 6px;
+  padding: 3px 6px;
   text-align: center;
   text-decoration: none;
   border: none;
@@ -118,7 +118,7 @@ html, body {
   float: right;
   font-family: Verdana, sans-serif;
   font-size: 20px;
-  padding: 2px 6px;
+  padding: 3px 6px;
   font-weight: normal;
   color: black;
   background-color: white;
@@ -141,7 +141,7 @@ html, body {
 .dropdown .dropbtn {           /*Styles dropdown button with text/icon*/
   background-color: white;
   color: black;
-  padding: 2px 16px;
+  padding: 3x 16px;
   font-family: Verdana, sans-serif; 
   font-size: 20px;
   border: none;
@@ -171,6 +171,7 @@ html, body {
 
 .dropdown-content a {           /*Styles link text within dropdown*/
   float: none;
+  text-align: left;
   color: black;
   padding: 12px 16px;
   text-decoration: none;

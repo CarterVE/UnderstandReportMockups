@@ -155,7 +155,7 @@ html, body {
 .dropdown-content {           /*Styles dropdown content box*/
   display: none;
   position: fixed;
-  background-color: #f2f2f2;
+  background-color: #fff;
   min-width: 150px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -170,9 +170,9 @@ html, body {
 
 
 .dropdown-content a {           /*Styles text within dropdown*/
-  float: none;
+  text-align: left;
   color: black;
-  padding: 12px 16px;
+  padding: 12px 22px 12px 22px;
   text-decoration: none;
   font-size: 16px;
   display: block;

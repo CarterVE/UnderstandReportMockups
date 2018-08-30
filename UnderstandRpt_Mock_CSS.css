@@ -78,7 +78,7 @@ html, body {
   font-family: Verdana, sans-serif; 
 }
 
-.navbar a {                       /*Default nav bar text styling*/
+.navbar a {                       /*Default nav bar link text styling*/
   display: inline-block;
   clear: left;
   font-size: 20px;
@@ -169,7 +169,7 @@ html, body {
 }
 
 
-.dropdown-content a {           /*Styles text within dropdown*/
+.dropdown-content a {           /*Styles link text within dropdown*/
   float: none;
   color: black;
   padding: 12px 16px;

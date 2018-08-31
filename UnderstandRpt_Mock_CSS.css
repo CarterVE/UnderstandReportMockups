@@ -122,7 +122,7 @@ html, body {
   font-weight: normal;
   color: black;
   background-color: white;
-  min-width: 130px;
+  min-width: 135px;
   text-align: center;
   text-decoration: none;
   border: none;
@@ -133,7 +133,7 @@ html, body {
 .dropdown {                     /*Styles overall dropdown div*/
   position: static;
   width: 15%;
-  min-width: 120px;
+  min-width: 135px;
   float: left;
   overflow: hidden;
 }
@@ -146,7 +146,7 @@ html, body {
   font-size: 20px;
   border: none;
   box-sizing: content-box;
-  min-width: 130px;
+  min-width: 135px;
   overflow: visible;
   text-align: center;
   margin: 0;
@@ -156,7 +156,7 @@ html, body {
   display: none;
   position: fixed;
   background-color: #f2f2f2;
-  min-width: 150px;
+  min-width: 135px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   max-height: 90vh;

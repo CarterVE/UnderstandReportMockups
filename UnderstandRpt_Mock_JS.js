@@ -48,7 +48,7 @@ if (!sessionStorage.getItem('viewedUnderstandReport')){
 
 var filename = (document.location.pathname.match(/[^\/]+$/)[0]).split('.')[0]   //Gets the filename without .html extension (ie index.html == index)
 
-var navPrepend = `
+var navMain = `
 
 <nav id="main-nav" class="nav">
   <div id="upper-nav">
@@ -58,7 +58,7 @@ var navPrepend = `
     <div id="main-dropdown" class="dropdown">
       <button id="dropdown-button" class="dropbtn">Contents <img id="dropdown-icon" src="ToCdropdown.png" style="height:12px"></button> 
       <div id="nav-dropdown-content" class="dropdown-content">
-        <a href="UnderstamdRpt_Mock.html">Overview</a>
+        <a href="UnderstandRpt_Mock.html">Overview</a>
         <a href="overview.html">Data Dictionary</a>
         <a href="#">File Contents</a>
         <a href="#">PInvocation Tree</a>
@@ -87,6 +87,9 @@ var navPrepend = `
       </div>
     </div>
     <button onclick="pageToTop()" id="pagedesc" title="Return to top of page">Pixie - Overview</button>
+`
+
+var navAlpha_main = `
     <div class="navCenter">
         <a href="#test">&</a>
         <a href="#A">A</a>
@@ -116,11 +119,33 @@ var navPrepend = `
         <a href="#Y">Y</a>
         <a href="#Z">Z</a>
     </div>
+    `
+
+var navAlpha_overview = ""
+
+var navEnd = `
 </div>
 </nav>
-
 `
+// setTimeout(function() {
+//     if (filename == 'UnderstandRpt_Mock') {
+//         $('body').prepend(navMain + navAlpha_main + navEnd);
+//     }
+//     else if (filename == 'overview') {
+//         $('body').prepend(navMain + navAlpha_overview + navEnd);
+//     }
+// }, 10);
 
-$(function() {
-    $('body').prepend(navPrepend);
+$(document).ready(function() {
+    if (filename == 'UnderstandRpt_Mock') {
+        $('body').prepend(navMain + navAlpha_main + navEnd);
+    }
+    else if (filename == 'overview') {
+        $('body').prepend(navMain + navAlpha_overview + navEnd);
+    }
 });
+
+
+
+
+

@@ -127,15 +127,9 @@ var navEnd = `
 </div>
 </nav>
 `
-// setTimeout(function() {
-//     if (filename == 'UnderstandRpt_Mock') {
-//         $('body').prepend(navMain + navAlpha_main + navEnd);
-//     }
-//     else if (filename == 'overview') {
-//         $('body').prepend(navMain + navAlpha_overview + navEnd);
-//     }
-// }, 10);
 
+
+// NavBar V1: Declare each alpha as a seperate variable (fairly ridiculous)
 $(document).ready(function() {
     if (filename == 'UnderstandRpt_Mock') {
         $('body').prepend(navMain + navAlpha_main + navEnd);

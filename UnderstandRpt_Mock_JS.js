@@ -57,89 +57,28 @@ var navMain = `
   <div id="lower-nav" class="navbar">
     <div id="main-dropdown" class="dropdown">
       <button id="dropdown-button" class="dropbtn">Contents <img id="dropdown-icon" src="ToCdropdown.png" style="height:12px"></button> 
-      <div id="nav-dropdown-content" class="dropdown-content">
-        <a href="UnderstandRpt_Mock.html">Overview</a>
-        <a href="overview.html">Data Dictionary</a>
-        <a href="#">File Contents</a>
-        <a href="#">PInvocation Tree</a>
-
-        <a href="#">Object Cross Reference</a>
-        <a href="#">TInvocation Tree</a>
-        <a href="#">MData Dictionary</a>
-        <a href="#">IFile Contents</a>
-        <a href="#">EInvocation Tree</a>
-        <a href="#">SData Dictionary</a>
-        <a href="#">Program Unit Cross Reference</a>
-<!--         <a href="#">12 Invocation Tree</a>
-        <a href="#">13 Data Dictionary</a>
-        <a href="#">14 File Contents</a>
-        <a href="#">15 Invocation Tree</a>
-        <a href="#">16 Data Dictionary</a>
-        <a href="#">17 File Contents</a>
-        <a href="#">18 Invocation Tree</a>
-        <a href="#">19 Data Dictionary</a>
-        <a href="#">20 File Contents</a>
-        <a href="#">21 Invocation Tree</a>
-        <a href="#">22 Invocation Tree</a>
-        <a href="#">23 Data Dictionary</a>
-        <a href="#">24 File Contents</a>
-        <a href="#">25 Invocation Tree</a> -->
-      </div>
-    </div>
-    <button onclick="pageToTop()" id="pagedesc" title="Return to top of page">Pixie - Overview</button>
-`
-
-var navAlpha_main = `
-    <div class="navCenter">
-        <a href="#test">&</a>
-        <a href="#A">A</a>
-        <a href="#B">B</a>
-        <a2>C</a2>
-        <a href="#D">D</a>
-        <a href="#E">E</a>
-        <a href="#F">F</a>
-        <a href="#G">G</a>
-        <a2>H</a2>     <!-- OR different color/not underlined OR &middot; OR &minus; OR &bull;-->
-        <a href="#I">I</a>
-        <a href="#J">J</a>
-        <a href="#K">K</a>
-        <a2>L</a2>
-        <a href="#M">M</a>
-        <a href="#N">N</a>
-        <a href="#O">O</a>
-        <a2>P</a2>
-        <a href="#Q">Q</a>
-        <a href="#R">R</a>
-        <a href="#S">S</a>
-        <a2>T</a2>
-        <a href="#U">U</a>
-        <a href="#V">V</a>
-        <a href="#W">W</a>
-        <a href="#X">X</a>
-        <a href="#Y">Y</a>
-        <a href="#Z">Z</a>
-    </div>
-    `
-
-var navAlpha_overview = ""
-
-var navEnd = `
-</div>
-</nav>
 `
 
 
-// NavBar V1: Declare each alpha as a seperate variable (fairly ridiculous)
-$(document).ready(function() {
-    if (filename == 'UnderstandRpt_Mock') {
-        $('body').prepend(navMain + navAlpha_main + navEnd);
-    }
-    else if (filename == 'overview') {
-        $('body').prepend(navMain + navAlpha_overview + navEnd);
-    }
-});
+// // NavBar V1: Declare each alpha as a seperate variable (fairly ridiculous)
+// $(document).ready(function() {
+//     if (filename == 'UnderstandRpt_Mock') {
+//         $('body').prepend(navMain + navAlpha_main + navEnd);
+//     }
+//     else if (filename == 'overview') {
+//         $('body').prepend(navMain + navAlpha_overview + navEnd);
+//     }
+// });
 
+// NavBar V2: Call ToC variable from separate JS file, place alpha and navbar closers (</...>) in each report html file
+// $(document).ready(function() {
+//         $('body').prepend(navMain + ToC);
+// });
 
+// NavBar V3: Like V2, but hopefully call mid-html build
+function navbar() {
+    $('body').prepend(navMain + ToC);
+};
 
 
 

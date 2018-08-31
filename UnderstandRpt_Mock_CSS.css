@@ -61,6 +61,14 @@ html, body {
   }
 }
 
+#genDateTime {           /*Styles link text within dropdown*/
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+}
+
 #und-icon {                       /*Styles the Understand icon, defines the animations on scroll*/
   height: 52.22px;
   background-color: white;

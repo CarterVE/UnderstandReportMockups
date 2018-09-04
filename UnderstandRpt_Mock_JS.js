@@ -48,16 +48,13 @@ if (!sessionStorage.getItem('viewedUnderstandReport')){
 
 var filename = (document.location.pathname.match(/[^\/]+$/)[0]).split('.')[0]   //Gets the filename without .html extension (ie index.html == index)
 
-var upperNav = `
-  <div id="upper-nav">
-      <img id=und-icon src="understand-logo-crop.png" alt="Understand">
-  </div>
-`
+// var upperNav = `
+// `
 
 // NavBar V3: navbar() function is called from html page on load, places upperNav and table of contents (var ToC
 //          in file table_of_contents.js) into html divs by template literal
 function navbar() {
-    $('#main-nav').prepend(upperNav);
+    //$('#main-nav').prepend(upperNav);
     $('#lower-nav').prepend(ToC)
 };
 

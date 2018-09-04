@@ -1,5 +1,5 @@
 var ToC = `
-<div id="main-dropdown" class="dropdown">
+<div id="main-dropdown" class="dropdown" tabindex="0">
     <button id="dropdown-button" class="dropbtn">Contents <img id="dropdown-icon" src="ToCdropdown.png" style="height:12px"></button> 
 	<div id="nav-dropdown-content" class="dropdown-content">
         <a href="UnderstandRpt_Mock.html">Overview</a>

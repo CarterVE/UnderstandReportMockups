@@ -136,6 +136,7 @@ html, body {
   min-width: 135px;
   float: left;
   overflow: hidden;
+  outline: none;
 }
 
 .dropdown .dropbtn {           /*Styles dropdown button with text/icon*/
@@ -187,5 +188,5 @@ html, body {
 
 .dropdown:hover .dropdown-content {display: block !important;}    /*Displays dropdown content when hovering over dropdown area*/
 
-
+.dropdown:focus .dropdown-content {display: block !important;} 
 

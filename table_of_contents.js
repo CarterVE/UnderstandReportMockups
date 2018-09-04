@@ -1,7 +1,9 @@
 var ToC = `
-<div id="nav-dropdown-content" class="dropdown-content">
+<div id="main-dropdown" class="dropdown">
+    <button id="dropdown-button" class="dropbtn">Contents <img id="dropdown-icon" src="ToCdropdown.png" style="height:12px"></button> 
+	<div id="nav-dropdown-content" class="dropdown-content">
         <a href="UnderstandRpt_Mock.html">Overview</a>
-        <a href="overview.html">Data Dictionary</a>
+        <a href="data_dictionary.html">Data Dictionary</a>
         <a href="#">File Contents</a>
         <a href="#">PInvocation Tree</a>
 
@@ -26,4 +28,6 @@ var ToC = `
         <a href="#">23 Data Dictionary</a>
         <a href="#">24 File Contents</a>
         <a href="#">25 Invocation Tree</a> -->
+    </div>
+</div>
 `

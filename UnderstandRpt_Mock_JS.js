@@ -48,36 +48,17 @@ if (!sessionStorage.getItem('viewedUnderstandReport')){
 
 var filename = (document.location.pathname.match(/[^\/]+$/)[0]).split('.')[0]   //Gets the filename without .html extension (ie index.html == index)
 
-var navMain = `
-
-<nav id="main-nav" class="nav">
+var upperNav = `
   <div id="upper-nav">
       <img id=und-icon src="understand-logo-crop.png" alt="Understand">
   </div>
-  <div id="lower-nav" class="navbar">
-    <div id="main-dropdown" class="dropdown">
-      <button id="dropdown-button" class="dropbtn">Contents <img id="dropdown-icon" src="ToCdropdown.png" style="height:12px"></button> 
 `
 
-
-// // NavBar V1: Declare each alpha as a seperate variable (fairly ridiculous)
-// $(document).ready(function() {
-//     if (filename == 'UnderstandRpt_Mock') {
-//         $('body').prepend(navMain + navAlpha_main + navEnd);
-//     }
-//     else if (filename == 'overview') {
-//         $('body').prepend(navMain + navAlpha_overview + navEnd);
-//     }
-// });
-
-// NavBar V2: Call ToC variable from separate JS file, place alpha and navbar closers (</...>) in each report html file
-// $(document).ready(function() {
-//         $('body').prepend(navMain + ToC);
-// });
-
-// NavBar V3: Like V2, but hopefully call mid-html build
+// NavBar V3: navbar() function is called from html page on load, places upperNav and table of contents (var ToC
+//          in file table_of_contents.js) into html divs by template literal
 function navbar() {
-    $('body').prepend(navMain + ToC);
+    $('#main-nav').prepend(upperNav);
+    $('#lower-nav').prepend(ToC)
 };
 
 

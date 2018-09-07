@@ -112,7 +112,7 @@ html, body {
   font-size: 20px;
   color: #bfbfbf;
   background-color: white;
-  padding: 2px 6px;
+  padding: 3px 6px;
   text-align: center;
   text-decoration: none;
   border: none;
@@ -202,8 +202,6 @@ html, body {
 .dropdown-content a:hover {background-color: #ddd;}   /*Changes color of dropdown text background when hovering*/
 
 .dropdown:hover .dropdown-content {display: block !important;}    /*Displays dropdown content when hovering over dropdown area*/
-
-.dropdown:focus .dropdown-content {display: block !important;} 
 
 /*d3 styling*/
 .axis {

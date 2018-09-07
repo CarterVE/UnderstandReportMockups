@@ -35,6 +35,21 @@ $(document).one('click', function() {
   $('.dropdown-content').css("display","none");
 });
 
+// // Make dropdown persist when clicked
+// $(window).bind("load", function() {
+//     document.getElementById("main-dropdown").onclick = function() {dropdownToggle()};
+// });
+
+// function dropdownToggle() {
+//     if (sessionStorage.getItem('ToC_lock')=='unlock' || !sessionStorage.getItem('ToC_lock')) {
+//         $('.dropdown-content').css("display","block");
+//         sessionStorage.setItem('ToC_lock', 'lock')
+//     } else {
+//         $('.dropdown-content').css("display","none");
+//         sessionStorage.setItem('ToC_lock', 'unlock')
+//     }
+// }
+
 
 // Returns the current page to the top
 function pageToTop() {

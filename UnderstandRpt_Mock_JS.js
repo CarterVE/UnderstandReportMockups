@@ -30,13 +30,13 @@ setInterval(function() {
     }
 }, 200);
 
-var pagedesc = document.getElementById("pagedesc");
-var descHeight = (pagedesc.clientHeight + 1);   //In px
-var descWidth = (pagedesc.clientWidth + 1);     //In px
-var descWidth2 = (pagedesc.width());
-$document.on('click', function() {
-    alert("Width: " + descWidth + " / " + descWidth2 + " Height: " + descHeight);
-});
+// var pagedesc = document.getElementById("pagedesc");
+// var descHeight = (pagedesc.clientHeight + 1);   //In px
+// var descWidth = (pagedesc.clientWidth + 1);     //In px
+// var descWidth2 = (pagedesc.width());
+// $document.on('click', function() {
+//     alert("Width: " + descWidth + " / " + descWidth2 + " Height: " + descHeight);
+// });
 
 // Makes the dropdown which is displayed when page is first opened disapper after clicking anywhere
 $(document).one('click', function() {
@@ -51,12 +51,16 @@ function pageToTop() {
 
 // Checks whether this is the first time a user is viewing the report in a given session, and if it is, displays the Table of Contents dropdown
 // Note that this uses sessionStorage, which is cleared when browser window is closed. localStorage could be used to persist forever
+$(document).ready(
+    function() {
 if (!sessionStorage.getItem('viewedUnderstandReport')){
-    setTimeout(function() {
+    //setTimeout(function() {
         $('.dropdown-content').css("display", "block");
         sessionStorage.setItem('viewedUnderstandReport', 'yes');
-    }, 10);
-};
+    }//, 1);
+    //};
+});
+
 
 //var filename = (document.location.pathname.match(/[^\/]+$/)[0]).split('.')[0]   //Gets the filename without .html extension (ie index.html == index)
 
@@ -65,6 +69,8 @@ if (!sessionStorage.getItem('viewedUnderstandReport')){
 function navbar() {
     //$('#main-nav').prepend(upperNav);
     $('#lower-nav').prepend(ToC)
+    var htmlToc = document.getElementById("main-dropdown-html");
+    htmlToc.parentNode.removeChild(htmlToc);
 };
 
 

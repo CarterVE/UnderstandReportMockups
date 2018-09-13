@@ -30,13 +30,21 @@ setInterval(function() {
     }
 }, 200);
 
-// var pagedesc = document.getElementById("pagedesc");
-// var descHeight = (pagedesc.clientHeight + 1);   //In px
-// var descWidth = (pagedesc.clientWidth + 1);     //In px
-// var descWidth2 = (pagedesc.width());
-// $document.on('click', function() {
-//     alert("Width: " + descWidth + " / " + descWidth2 + " Height: " + descHeight);
-// });
+$(document).ready( function () {
+$(".dropdown").mouseover(
+    function() {
+    var height = $('#nav-dropdown-content').height();
+    //alert(height);
+    // var origHeight = $('#dynamic').height();
+    /*
+        I am taking the height of the box to match, subtracting the height of the
+        dynamic box, and using the value as top-padding to push the content to the
+        bottom. I am also adding an extra 10 to the equation because the boxes naturally
+        have 10 pixels padding, because I was being fancy and trying to make the demo look nice. -.-
+    */
+    $('#dropdown-buffer').css('height', (height+50) + 'px')
+});
+});
 
 // Makes the dropdown which is displayed when page is first opened disapper after clicking anywhere
 $(document).one('click', function() {
@@ -69,8 +77,8 @@ if (!sessionStorage.getItem('viewedUnderstandReport')){
 function navbar() {
     //$('#main-nav').prepend(upperNav);
     $('#lower-nav').prepend(ToC)
-    var htmlToc = document.getElementById("main-dropdown-html");
-    htmlToc.parentNode.removeChild(htmlToc);
+    //var htmlToc = document.getElementById("main-dropdown-html");
+    //htmlToc.parentNode.removeChild(htmlToc);
 };
 
 

@@ -60,7 +60,6 @@ html, body {
   padding: 20px;
   margin-top: 95px;
   background-color: #fff;
-  height
   overflow: auto;
 }
 
@@ -213,12 +212,11 @@ html, body {
 }
 
 .dropdown-border {
-  width: 325px;
+  width: 275px;
   display: none;
   position: fixed;
   opacity: 1;
   z-index: 1;
-  height: calc(100vh - 111px);
   overflow-y: auto;
   padding: 0px 0px 0px 0px;
 }
@@ -226,16 +224,16 @@ html, body {
 .dropdown-content {           /*Styles dropdown content box*/
   opacity: 1;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  background-color: rgba(255,0,0,0.5);
+  background-color: rgba(255,255,255,0.5);
   width: 250px;
-  max-height: calc(95vh - 111px);
+  max-height: calc(96vh - 111px);
   overflow: auto;
 }
 
-/*.scrolled-nav .dropdown-content {     Styles dropdown content when scrolled 
+.scrolled-nav .dropdown-content {     Styles dropdown content when scrolled 
   top: auto;
   max-height: calc(98vh - 58px);
-}*/
+}
 
 
 .dropdown-content a {           /*Styles link text within dropdown*/

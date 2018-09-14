@@ -174,7 +174,7 @@ html, body {
 }
 
 .navbar #rightspacer img {
-  padding: 3px 12px 3px 4px;
+  padding: 0px 12px 3px 4px;
   width: 0px;
   -webkit-transition: all .3s;
   transition: all .3s;
@@ -251,6 +251,16 @@ html, body {
 }
 
 .dropdown-content a:hover {background-color: #ddd;}   /*Changes color of dropdown text background when hovering*/
+
+.dropdown-content txt {
+  float: none;
+  text-align: left;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+}
 
 .dropdown:hover .dropdown-border {display: block !important;}    /*Displays dropdown content when hovering over dropdown area*/
 .dropdown:hover .dropdown-content {display: block !important;}    /*Displays dropdown content when hovering over dropdown area*/
